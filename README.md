@@ -43,15 +43,15 @@ Combines PDF ingestion, retrieval, pluggable LLM providers, evaluation, and Prom
 
 `Python` `FastAPI` `Next.js` `PostgreSQL` `RabbitMQ` `MinIO`
 
-A full-stack social platform with 12 FastAPI routers, JWT authentication, community and voting workflows, a RabbitMQ-backed image-processing worker, PostgreSQL persistence, MinIO object storage, and a containerized Next.js frontend. Developed as a personal, AI-assisted portfolio project.
+A full-stack social platform with 39 API operations across 12 FastAPI routers, plus a health endpoint. It includes JWT authentication, community and voting workflows, a RabbitMQ-backed image-processing worker, PostgreSQL persistence, MinIO object storage, and a containerized Next.js frontend. Developed as a personal, AI-assisted portfolio project.
 
-**Inspect:** [API composition](https://github.com/sasidharappalla/auranet/blob/main/backend/app/main.py) · [container stack](https://github.com/sasidharappalla/auranet/blob/main/docker-compose.yml) · [architecture and setup](https://github.com/sasidharappalla/auranet#readme)
+**Inspect:** [API composition](https://github.com/sasidharappalla/auranet/blob/main/backend/app/main.py) · [tests](https://github.com/sasidharappalla/auranet/tree/main/backend/tests) · [CI](https://github.com/sasidharappalla/auranet/blob/main/.github/workflows/ci.yml) · [container stack](https://github.com/sasidharappalla/auranet/blob/main/docker-compose.yml) · [load scenario](https://github.com/sasidharappalla/auranet/blob/main/benchmarks/load.js)
 
 **Reported project results:** sub-200 ms p95 API latency, 1,000+ concurrent users, and 99%+ uptime.
 
 ## Additional Work
 
-- **[S3Lite](https://github.com/sasidharappalla/s3lite)** · Personal object-storage project implementing bucket and object operations, API-key authentication, HMAC presigned URLs, SHA-256 integrity checks, PostgreSQL metadata, and MinIO persistence. **Reported result:** 1,000+ concurrent operations. [API](https://github.com/sasidharappalla/s3lite/blob/main/app/main.py) · [authentication](https://github.com/sasidharappalla/s3lite/blob/main/app/auth.py) · [deployment](https://github.com/sasidharappalla/s3lite/blob/main/docker-compose.yml)
+- **[S3Lite](https://github.com/sasidharappalla/s3lite)** · Personal object-storage project implementing bucket and object operations, API-key authentication, HMAC presigned URLs, SHA-256 integrity checks, PostgreSQL metadata, and MinIO persistence. **Reported result:** 1,000+ concurrent operations. [API](https://github.com/sasidharappalla/s3lite/blob/main/app/main.py) · [tests](https://github.com/sasidharappalla/s3lite/tree/main/tests) · [CI](https://github.com/sasidharappalla/s3lite/blob/main/.github/workflows/ci.yml) · [load scenario](https://github.com/sasidharappalla/s3lite/blob/main/benchmarks/load.js)
 
 - **[BurnOut Wellness App](https://github.com/sasidharappalla/BurnOut_FitnessApp)** · Team project built with Flask and MongoDB for activity logging, calorie tracking, goals, and social accountability. **Project-reported outcomes:** 50+ beta users, 80% weekly retention, and a 45% engagement increase.
 
